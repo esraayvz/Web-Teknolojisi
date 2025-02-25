@@ -1,2 +1,2 @@
 # Web-Teknolojisi
-Html css ve javascript kullanılarak frontend ile bir kafenin web sitesi tasarlanmıştır.
+Bu proje, cheesecake satan bir mekanın modern bir web sitesinin tasarımını içeriyor. HTML, CSS ve JavaScript frontend teknolojilerini kullanılarak geliştirilmiş olan site, kullanıcı dostu bir arayüz sunuyor. Ziyaretçiler, mekanın cheesecake çeşitlerini keşfedebilir. Responsive tasarım sayesinde tüm cihazlarda uyumlu bir şekilde çalışan bir sitedir. Renkli ve estetik tasarımıyla site, mekanın sunduğu cheesecake’leri tanıtarak kullanıcıları cezbetmeyi hedefliyor.
