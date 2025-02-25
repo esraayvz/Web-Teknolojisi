@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .html,
+  body {
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    padding: 40px;
+    background-color: rgb(99, 20, 0) !important;
+    margin-bottom: 100px;
+  
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #f5d5ac !important;
+    font-size: 40px;
+  
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #f5d5ac;
+    
+  }
+  
+  .navbar-nav {
+    margin-right: auto;
+  }
+  
+  .nav-item .nav-link {
+    margin-left: 25px;
+  
+  }
+  
+  .nav-link {
+    color: #f5d5ac !important;
+    transition: color 0.3s;
+    
+  }
+  
+  #darkModeLink {
+    color: #f5d5ac;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .dark-mode #darkModeLink {
+    color: rgb(99, 20, 0);
+   
+  }
+  
+  .dark-mode {
+    background-color: rgb(99, 20, 0);
+    color: #ffffff;
+  
+  }
+  
+  .dark-mode .navbar,
+  .dark-mode .footer {
+    background-color: #f5d5ac !important;
+   
+  }
+  
+  .dark-mode .navbar-brand,
+  .dark-mode .navbar-nav .nav-link,
+  .dark-mode .logo-text,
+  .dark-mode .description {
+    color: rgb(99, 20, 0) !important;
+  
+  }
+  
+  .dark-mode .sag h2,
+  .dark-mode .sol h2 {
+    color: #f5d5ac;
+  }
+  
+  .dark-mode .horizontal-line {
+    border-top: 2px solid rgb(99, 20, 0);
+  
+  }
+  
+  #dark-mode-toggle {
+    cursor: pointer;
+  }
+  
+  .dark-mode .navbar-toggler-icon {
+    background-color: rgb(99, 20, 0);
+  }
+  
+  #darkModeLink:hover {
+    color: black !important;
+   
+  }
+  
+  .dark-mode #darkModeLink:hover {
+    color: black !important;
+  }
+  
+  .içerik {
+    margin: 160px;
+    font-family: Viner Hand ITC;
+    font-size: 60px;
+    text-align: center;
+    display: block;
+    word-spacing: 10px;
+  }
+  
+  .row {
+    margin-bottom: 80px;
+  }
+  
+  .mb-4 {
+    margin: 60px;
+  }
+  
+  .caption-title {
+    font-weight: bold;
+    text-align: center;
+    font-family: Viner Hand ITC;
+    margin-top: 25px;
+    font-size: 25px;
+  }
+  
+  .caption-price {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 30px;
+    font-family: Viner Hand ITC;
+  }
+  
+  .footer {
+    background-color: rgb(99, 20, 0);
+    height: 220px;
+    margin-top: 200px;
+    position: relative;
+  }
+  
+  .horizontal-line {
+    border-top: 2px solid #f5d5ac;
+    width: 90%;
+    position: absolute;
+    margin-top: 40px;
+    left: 5%;
+  }
+  
+  .instagram-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .instagram-logo img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .logo-text {
+    color: #f5d5ac;
+    margin: 0;
+    display: inline;
+    vertical-align: middle;
+  
+  }
+  
+  .description {
+    color: #f5d5ac;
+    text-align: center;
+  
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width:800px) {
+  
+    .sag,
+    .sol {
+      width: 150%;
+    }
+    
+    .içerik {
+      text-align: center;
+      margin: 20px;
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+  
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    .nav-item {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    .navbar-toggler {
+      margin-right: 10px;
+    }
+  }

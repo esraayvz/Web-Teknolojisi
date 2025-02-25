@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .html,
+  body {
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    padding: 40px;
+    background-color: rgb(99, 20, 0) !important;
+    margin-bottom: 100px;
+  
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #f5d5ac !important;
+    font-size: 40px;
+  
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #f5d5ac;
+  
+  }
+  
+  .navbar-nav {
+    margin-right: auto;
+  }
+  
+  .nav-item .nav-link {
+    margin-left: 25px;
+  
+  }
+  
+  .nav-link {
+    color: #f5d5ac !important;
+    transition: color 0.3s;
+  }
+  
+  
+  #darkModeLink {
+    color: #f5d5ac;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .dark-mode #darkModeLink {
+    color: rgb(99, 20, 0) ;
+  }
+  
+  .dark-mode {
+    background-color: rgb(99, 20, 0);
+    color: #ffffff;
+  
+  }
+  
+  .dark-mode .navbar,
+  .dark-mode .footer {
+    background-color: #f5d5ac !important;
+  }
+  
+  .dark-mode .navbar-brand,
+  .dark-mode .navbar-nav .nav-link,
+  .dark-mode .logo-text,
+  .dark-mode .description {
+    color: rgb(99, 20, 0) !important;
+  
+  
+  
+  }
+  
+  .dark-mode .sag h2,
+  .dark-mode .sol h2 {
+    color: #f5d5ac;
+  }
+  
+  .dark-mode .horizontal-line {
+    border-top: 2px solid rgb(99, 20, 0);
+  
+  }
+  
+  #dark-mode-toggle {
+    cursor: pointer;
+  }
+  
+  .dark-mode .navbar-toggler-icon {
+    background-color: rgb(99, 20, 0);
+  }
+  
+  #darkModeLink:hover {
+    color: black !important;
+  }
+  
+  .dark-mode #darkModeLink:hover {
+    color: black !important;
+  
+  }
+  
+  .dark-mode .anket-formu {
+    color: white;
+  }
+  
+  .dark-mode .anket-container {
+    color: black;
+  }
+  
+  .anket-formu {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px
+  }
+  
+  .anket-container {
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .anket-soru {
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .anket-secenek {
+    display: block;
+    margin-bottom: 30px;
+  }
+  
+  #gonderButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #gonderButton:hover {
+    background-color: #45a049;
+  }
+  
+  .anket-katildiniz {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin: 60px;
+  }
+  
+  .footer {
+    background-color: rgb(99, 20, 0);
+    height: 220px;
+    margin-top: 200px;
+    position: relative;
+  }
+  
+  .horizontal-line {
+    border-top: 2px solid #f5d5ac;
+    width: 90%;
+    position: absolute;
+    margin-top: 40px;
+    left: 5%;
+  }
+  
+  .instagram-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .instagram-logo img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-bottom: 0;
+  }
+  
+  .logo-text {
+    color: #f5d5ac;
+    margin: 0;
+    display: inline;
+    vertical-align: middle;
+  
+  }
+  
+  .description {
+    color: #f5d5ac;
+    text-align: center;
+  
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+  
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    .nav-item {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    .navbar-toggler {
+      margin-right: 10px;
+    }
+  }

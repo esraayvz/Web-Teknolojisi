@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JERAKONES</title>
+    
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <link rel="stylesheet" href="anket.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">JERAKONES</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="anasayfam.html" target="_self">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menü.html" target="_self">Menü<i class="fas fa-utensils"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hakkımızda.html" target="_self">Hakkımızda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="iletişim.html" target="_self">İletişim<i class="fas fa-phone"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="anket.html" target="_self">Anket</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-link" id="darkModeLink">Görünüm<i class="fas fa-moon"></i></span>
+          </li>
+          <li class="nav-item">
+            <span class="nav-link" id="current-time"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="anket-formu"><b>ANKET FORMU</b></div>
+  <div class="anket-container" id="anketForm">
+    <div class="anket-soru">1.Cheesecakelerimizin lezzetini nasıl değerlendirirsiniz?
+    </div>
+    <label class="anket-secenek"><input type="radio" name="lezzet" value="kotu">Kötü</label>
+    <label class="anket-secenek"><input type="radio" name="lezzet" value="orta">Orta</label>
+    <label class="anket-secenek"><input type="radio" name="lezzet" value="iyi">İyi</label>
+ 
+    <div class="anket-soru">2.Cheesecakelerimizin fiyatını nasıl değerlendirirsiniz?</div>
+    <label class="anket-secenek"><input type="radio" name="fiyat" value="pahali">Pahalı</label>
+    <label class="anket-secenek"><input type="radio" name="fiyat" value="uygun">Uygun</label>
+    <label class="anket-secenek"><input type="radio" name="fiyat" value="ucuz">Ucuz</label>
+ 
+    <div class="anket-soru">3.Hangi cheesecake çeşitlerini daha çok beğeniyorsunuz?</div>
+    <label class="anket-secenek"><input type="radio" name="cesit" value="orjinal">Orjinal</label>
+    <label class="anket-secenek"><input type="radio" name="cesit" value="cikolatali">Çikolatalı</label>
+    <label class="anket-secenek"><input type="radio" name="cesit" value="meyveli">Meyveli</label>
+    <label class="anket-secenek"><input type="radio" name="cesit" value="biskuvili">Bisküvili</label>
+ 
+    <div class="anket-soru">4.Menünün yeterliliği hakkında ne düşünüyorsunuz?</div>
+    <label class="anket-secenek"><input type="radio" name="menu" value="daha_fazla">Daha fazla çeşit olmalı</label>
+    <label class="anket-secenek"><input type="radio" name="menu" value="yeterli">Menünün çeşitliliği yeterli</label>
+ 
+    <div class="anket-soru">5.Malzemelerin kalitesi ve tazeliğini nasıl değerlendiririsiniz? </div>
+    <label class="anket-secenek"><input type="radio" name="malzeme_kalite" value="kotu">Kötü</label>
+    <label class="anket-secenek"><input type="radio" name="malzeme_kalite" value="orta">Orta</label>
+    <label class="anket-secenek"><input type="radio" name="malzeme_kalite" value="iyi">İyi</label>
+ 
+    <div class="anket-soru">6.Bizle iletişime geçme konusunda bir sıkıntı yaşadınız mı?</div>
+    <label class="anket-secenek"><input type="radio" name="iletisim_sorunu" value="evet">Evet</label>
+    <label class="anket-secenek"><input type="radio" name="iletisim_sorunu" value="hayir">Hayır</label>
+ 
+    <div class="anket-soru">7.Siparişinizin size ulaşımı hakkında bir sıkıntı yaşadınız mı?</div>
+    <label class="anket-secenek"><input type="radio" name="siparis_sorunu" value="evet">Evet</label>
+    <label class="anket-secenek"><input type="radio" name="siparis_sorunu" value="hayir">Hayır</label>
+ 
+    <div class="anket-soru">8. Bizi Instagram Hesabımızdan Takip Ediyor musunuz?</div>
+    <label class="anket-secenek"><input type="radio" name="instagram_takip" value="evet">Evet</label>
+    <label class="anket-secenek"><input type="radio" name="instagram_takip" value="hayir">Hayır</label>
+
+    <button id="gonderButton" onclick="kontrolVeGonder()">Gönder</button>
+ </div>
+
+  <div class="footer">
+    <hr class="horizontal-line">
+    <div class="instagram-logo">
+        <img src="Instagram-Logo-PNG-Pic.jpg" alt="Instagram Logo">
+        <p class="logo-text"><b>@Jerakones_Kafe</b></p>
+    <div class="description">
+       <p> <b>Bizi Instagram hesabımızdan da takip edebilirsiniz.</b></p>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="anket.js"></script>
+</body>
+</html>
